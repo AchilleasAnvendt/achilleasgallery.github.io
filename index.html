@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+      
+
+        body {
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 50px auto 150px;
+        }
+
+        .header {
+            grid-column: 1/-1;
+
+        }
+
+        .body {
+            grid-column: 1/-1;
+            padding: 20px 50px;
+        }
+
+        .footer {
+            grid-column: 1/-1;
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .flex-box {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 20px 20px;
+            width: 100%;
+            padding: 40px 0;
+        }
+
+        .item {
+            width: 30%;
+            display: flex;
+            align-items: center;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            .flex-box {
+                flex-direction: column;
+            }
+            .item{
+                width: fit-content;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="body">
+            <h1>Achilleas Angos Pavlovic</h1>
+            <div class="flex-box">
+                <div class="item"><img src="Pictures/DSC02040.JPG"></div>
+                <div class="item"><img src="Pictures/DSC02045.JPG"></div>
+                <div class="item"><img src="Pictures/DSC02054.JPG"></div>
+                <div class="item"><img src="Pictures/DSC02083.JPG"></div>
+                <div class="item"><img src="Pictures/DSC02087.JPG"></div>
+                <div class="item"><img src="Pictures/DSC01906.JPG"></div>
+                <div class="item"><img src="Pictures/DSC01783.JPG"></div>
+                <div class="item"><img src="Pictures/DSC01752.JPG"></div>
+                <div class="item"><img src="Pictures/DSC01637.JPG"></div>
+                <div class="item"><img src="Pictures/DSC01616.JPG"></div>
+                <div class="item"><img src="Pictures/DSC01933.JPG"></div>
+                <div class="item"><img src="Pictures/DSC01935.JPG"></div>
+                <div class="item"><img src="Pictures/DSC01701.JPG"></div>
+                <div class="item"><img src="Pictures/DSC01822på.JPG"></div>
+                <div class="item"><img src="Pictures/DSC02061.JPG"></div>
+                <div class="item"><img src="Pictures/2_1583595624708.JPG"></div>
+                <div class="item"><img src="Pictures/000001.JPG"></div>
+    
+                 
+            </div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+
+
+    <script>
+    </script>
+</body>
+
+</html>
